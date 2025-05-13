@@ -1,96 +1,75 @@
-# 🎓💼 Salary Prediction Web Application
+# Linear Regression Web App using Streamlit
 
-A simple and interactive web app that predicts a **job package (salary)** based on a student's **CGPA**, powered by **Linear Regression** and deployed using **Streamlit**.
+This project demonstrates how to build a **Linear Regression Web Application** using **Streamlit**, **Scikit-Learn**, and **Python**. The web app allows users to upload their dataset, train a linear regression model, and make predictions interactively.
 
-## 📌 Overview
+## 📂 Repository Structure
 
-This project contains the following key components:
-
-| File                          | Description                                                                                                              |
-| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| `📄 app.py`                   | Main script for the Streamlit web interface. Takes CGPA as input and shows predicted salary.                             |
-| `📘 LinearRegression.ipynb`   | Jupyter Notebook for training the model using `placements.csv`. Includes data analysis, visualization, and model saving. |
-| `📦 Linear_Regression.joblib` | Saved Linear Regression model generated after training.                                                                  |
-| `📄 requirements.txt`         | Python dependencies for running the project.                                                                             |
-| `📊 placements.csv`           | Dataset containing student CGPAs and corresponding job packages.                                                         |
-
-## 📂 Dataset
-
-The dataset used: **`placements.csv`**
-
-| Column       | Description                                   |
-| ------------ | --------------------------------------------- |
-| `🎓 cgpa`    | Cumulative Grade Point Average of the student |
-| `💰 package` | Job package (salary) offered to the student   |
-
-## ⚙️ Setup & Installation
-
-### 🔁 Clone the repository
-
-```bash
-git clone <repository_url>
-cd Salary_Prediction
+```
+Regression_Streamlit/
+├── LinearRegression.ipynb   # Jupyter Notebook demonstrating Linear Regression with Streamlit
+└── (other Streamlit app files, if any)
 ```
 
-### 📦 Install dependencies
+## 🚀 Features
 
-Using `requirements.txt`:
+* Upload your custom CSV dataset.
+* Visualize the dataset.
+* Select features and target variable.
+* Train a Linear Regression model.
+* Display model accuracy and coefficients.
+* Predict outcomes using custom inputs.
+
+## 🛠 Technologies Used
+
+* Python 3
+* Streamlit
+* Pandas
+* Scikit-learn
+* Seaborn
+
+## 🔧 Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/aakash-patil7140/Regression_Streamlit.git
+cd Regression_Streamlit
+```
+
+2. Install required packages:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Or manually:
+If `requirements.txt` is not provided, install manually:
 
 ```bash
-pip install streamlit pandas numpy scikit-learn matplotlib seaborn joblib
+pip install streamlit pandas scikit-learn seaborn
 ```
 
----
+## 💡 How to Run
 
-## 🚀 Running the Application
+1. Navigate to the project folder.
+2. Run the Streamlit app using:
 
-1. Open terminal and navigate to the project directory.
-2. Launch the app using:
+```bash
+streamlit run LinearRegression.ipynb
+```
 
-   ```bash
-   streamlit run app.py
-   ```
-3. Your browser will open the app.
-   🔢 Enter a CGPA (between **3.0 and 10.0**) and click **"Predict Package"** to get your predicted salary 💸.
+> **Note:** Streamlit natively supports `.py` files. To run a `.ipynb` file, you might need to convert it to `.py` using Jupyter or use tools like `jupyter nbconvert`.
 
----
+Alternatively, extract the code from the notebook and place it inside a `.py` file.
 
-## 🧠 Training the Model
+## 📊 Example Use Case
 
-To retrain or view model development:
+* Upload a dataset containing independent and dependent variables.
+* Select your columns and train a model.
+* Get model insights and predict for new data points.
 
-1. Make sure Jupyter is installed:
+## 📎 References
 
-   ```bash
-   pip install notebook
-   ```
-2. Open the notebook:
+* [Streamlit Documentation](https://docs.streamlit.io/)
+* [Scikit-learn Linear Regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html)
 
-   ```bash
-   jupyter notebook LinearRegression.ipynb
-   ```
-3. Execute all cells to:
-
-   * Load and visualize data 📊
-   * Train the model 🧪
-   * Save the trained model as `Linear_Regression.joblib` 💾
-
-
-## 🛠 Libraries & Tools Used
-
-| Library                   | Purpose                       |
-| ------------------------- | ----------------------------- |
-| `🔵 Streamlit`            | Build the web interface       |
-| `📊 Pandas`               | Data handling & preprocessing |
-| `📐 NumPy`                | Numerical operations          |
-| `📈 Scikit-learn`         | ML model & evaluation         |
-| `🖼 Matplotlib & Seaborn` | Data visualization            |
-| `💾 Joblib`               | Model serialization           |
-
-**#StreamLit URL** :- https://rio1002-salary-prediction-app-9zhuoi.streamlit.app/
+#Streamlit Url :- 
