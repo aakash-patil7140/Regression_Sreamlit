@@ -72,4 +72,4 @@ Alternatively, extract the code from the notebook and place it inside a `.py` fi
 * [Streamlit Documentation](https://docs.streamlit.io/)
 * [Scikit-learn Linear Regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html)
 
-#Streamlit Url :- 
+#Streamlit Url :- https://aakash-patil7140-regression-sreamlit-app-eeicgf.streamlit.app/
